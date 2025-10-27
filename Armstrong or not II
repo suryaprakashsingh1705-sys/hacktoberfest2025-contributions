@@ -1,0 +1,20 @@
+n = int(input())
+B = n
+A= n
+count = 0 
+while n > 0 :
+    digit = n% 10 
+    count = count +1 
+    n = n//10
+
+num =0
+
+while B > 0:
+    digit = B %10
+    num = num + digit**count  
+    B = B//10
+
+if A ==num :
+    print("True") 
+else :
+    print("False")
